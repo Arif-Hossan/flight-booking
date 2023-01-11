@@ -17,7 +17,8 @@ function calculateTotal() {
   let economyClassTicket = getInputValue("economy-class");
   //calculate subtotal
   let subtotal = document.getElementById("subtotal");
-  subtotal = firstClassTicket * firstClassPrice + economyClassTicket * economyClassPrice;
+  subtotal =
+    firstClassTicket * firstClassPrice + economyClassTicket * economyClassPrice;
   document.getElementById("subtotal").innerText = subtotal;
   //tax
   let tax = document.getElementById("tax");
@@ -33,6 +34,16 @@ function getInputValue(ticketClass) {
   let ticketNumber = parseInt(ticketCount.value);
   return ticketNumber;
 }
+// Welcome message
+let bookNowButton = document
+  .getElementById("book-now")
+  .addEventListener("click", function () {
+    let mainContent = (document.getElementById("main-content").style.display =
+      "none");
+    let welcomeContent = (document.getElementById(
+      "welcome-content"
+    ).style.display = "block");
+  });
 
 // function handleTicketChange(ticketClass, isChange) {
 //   //increment and decrement the ticket count

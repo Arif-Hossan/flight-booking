@@ -123,3 +123,16 @@ a.active {
   display: flex;
   justify-content: space-between;
 }
+
+#welcome-content {
+  margin: 150px 50px;
+  background-color: #f6f5fa;
+  border-radius: 10px;
+  padding: 100px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  display: none;
+  opacity: 70%;
+  color: black;
+}
